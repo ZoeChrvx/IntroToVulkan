@@ -49,6 +49,16 @@ Mat4 Mat4::CreateRotationZ(float radians) {
 
 	};
 }
+Mat4 Mat4::CreateRotationY(float angle)
+{
+	return Mat4{
+	cosf(angle), 0, sinf(angle), 0,
+	0, 1, 0, 0,
+	-sinf(angle), 0, cosf(angle), 0,
+	0, 0, 0, 1
+
+	};
+}
 Mat4 Mat4::CreateTranslation(float x, float y, float z)
 {
 	return Mat4{

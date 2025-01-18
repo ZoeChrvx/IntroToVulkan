@@ -6,7 +6,7 @@ public:
 	SDL_Window* sdlWindow;
 	void Init();
 	void Close() const;
-	int width{ 640 };
-	int height{ 480 };
+	int width{ 800 };
+	int height{ 800 };
 };
 #endif //WINDOW_HPP
